@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+// 引入字体样式
+import './assets/fonts/iconfont.css'
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-
+// 严格模式，由于组件内还有很多地方比较低版本所以暂不使用严格模式
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <App />,
   document.getElementById('root')
 );
 
